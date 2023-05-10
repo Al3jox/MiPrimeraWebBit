@@ -1,140 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Mi Primera Web</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Links fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <!-- Link CSS propio -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>VideoG Web</title>
+  </head>
+  <body>
     <header>
+      <h1 class="nameMain">VideoG Web</h1>
 
-        <h1>
-            
-            Encabezado principal
-
-        </h1>
-        
-        <nav>
-     
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de mí</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-
-        </nav>
-        
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de mí</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
 
     </header>
 
     <!-- Main -->
 
     <main>
+      <section class="section1">
+        <h2 class="h2Styles">Experiencias laborales</h2>
 
-        <section>
+        <article>
+          <h3>Game Pass</h3>
 
-            <h2>Experiencias laborales</h2>
+          <p>
+            Xbox Game Pass Ultimate incluye Xbox Live Gold y cientos de juegos
+            de alta calidad. Juega con amigos en tu consola y PC y consigue una
+            suscripción a EA Play, todo por un bajo precio mensual.
+          </p>
+        </article>
+      </section>
 
-            <article>
+      <!-- Hasta aquí va el primer section -->
 
-                <h3>
+      <section class="section1">
+        <h2 class="h2Styles">Formación académica</h2>
 
-                    Game Pass
+        <article>
+          <h3>Formación 1</h3>
 
-                </h3>
-
-                <p>
-
-                    Xbox Game Pass Ultimate incluye Xbox Live Gold y cientos de juegos de alta calidad. Juega con amigos en tu consola y PC y consigue una suscripción a EA Play, todo por un bajo precio mensual.
-
-                </p>
-
-            </article>
-
-        </section>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem, asperiores! Quasi mollitia et, accusamus amet minima
+            ratione ipsam molestias tempora, quod consectetur voluptas.
+            Asperiores, rerum perferendis est in illum libero.
+          </p>
+        </article>
+      </section>
 
 
-        <!-- Hasta aquí va el primer section -->
+      <section class="section1">
+        <h2 id="h2Styles">Proyectos</h2>
 
-        <section>
+        <article>
+          <h3>Proyectos 1</h3>
 
-            <h2>Formación académica</h2>
-
-            <article>
-
-                <h3>
-
-                    Formación 1
-
-                </h3>
-
-                <p>
-            
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, asperiores! Quasi mollitia et, accusamus amet minima ratione ipsam molestias tempora, quod consectetur voluptas. Asperiores, rerum perferendis est in illum libero.
-
-                </p>
-
-            </article>    
-
-        </section>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem, asperiores! Quasi mollitia et, accusamus amet minima
+          </p>
+        </article>
+      </section>
 
     </main>
-
 
     <!-- Formularios -->
 
     <form action="enviar()" method="post">
+      <label for="email">Ingrese su Correo</label>
+      <input type="text" id="email" name="email" required />
 
-        <label for="email">Ingrese su Correo</label>
-        <input type="text" id="email" name="email" required>
+      <br />
 
-        <br>
+      <label for="nombre">Ingrese su Nombre</label>
+      <input type="text" id="nombre" name="nombre" required />
 
-        <label for="nombre">Ingrese su Nombre</label>
-        <input type="text" id="nombre" name="nombre" required>
-         
-        <br>
+      <br />
 
-        <label for="contrasenia">Ingrese su contraseña</label>
-        <input type="password" id="contrasenia" name="contrasenia" required>
+      <label for="contrasenia">Ingrese su contraseña</label>
+      <input type="password" id="contrasenia" name="contrasenia" required />
 
-        <br>
+      <br />
 
-        <label for="fecha">Ingrese la fecha</label>
-        <input type="datetime-local" id="fecha" name="fecha" required>
+      <label for="fecha">Ingrese la fecha</label>
+      <input type="datetime-local" id="fecha" name="fecha" required />
 
-        <br>
+      <br />
 
-        <label for="archivo">Subir archivo</label>
-        <input type="file" id="archivo" name="archivo" required>
+      <label for="archivo">Subir archivo</label>
+      <input type="file" id="archivo" name="archivo" required />
 
-        <br>
+      <br />
 
-        <label for="edad">Ingrese su edad</label>
-        <input type="number" id="edad" name="edad" required>
+      <label for="edad">Ingrese su edad</label>
+      <input type="number" id="edad" name="edad" required />
 
-        <button type="submit">Enviar</button>
-
+      <button class="button" type="submit">Enviar</button>
+      
     </form>
+
+
+
+
+
+    <!-- Metodología BEM -->
+
+    <button class="button">
+        Normal button
+    </button>
+    <button class="button button--state-success">
+        Success button
+    </button>
+    <button class="button button--state-danger">
+        Danger button
+    </button>
+    <button class="button button--state-info">
+        Danger button
+    </button>
+    <button class="button button--state-warning">
+        Danger button
+    </button>
 
 
 
     <!-- Footer -->
 
     <footer>
-
-        <p>
-
-            Desarrollador - Nombre
-
-            Dirección del local: XXXXX
-
-        </p>
-
+      <p>Desarrollador - Nombre Dirección del local: XXXXX</p>
     </footer>
-
-</body>
+  </body>
 </html>
